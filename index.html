@@ -3,22 +3,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Safety Light</title>
+<title>Safety Light — Flash & Signal</title>
 <style>
   :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-         max-width: 640px; margin: 0 auto; padding: 60px 22px; line-height: 1.6;
+         max-width: 760px; margin: 0 auto; padding: 56px 22px 72px; line-height: 1.6;
          color: #1c1c1e; background: #fff; }
   @media (prefers-color-scheme: dark) { body { color: #e8e8ea; background: #0f1115; } a { color: #6db2ff; } }
-  h1 { font-size: 1.8rem; } a { color: #0a66ff; } li { margin: 10px 0; }
+  h1 { font-size: 2rem; margin: 0 0 6px; }
+  .tagline { font-size: 1.12rem; opacity: .85; margin: 0 0 8px; }
+  .sub { opacity: .6; margin: 0 0 32px; font-size: .95rem; }
+  a { color: #0a66ff; }
+  .shots { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin: 8px 0 36px; }
+  .shots img { width: 220px; max-width: 42vw; height: auto; border-radius: 20px;
+               box-shadow: 0 8px 30px rgba(0,0,0,.28); }
+  .links { display: flex; gap: 26px; flex-wrap: wrap; font-size: 1.05rem; }
+  footer { margin-top: 40px; font-size: .85rem; opacity: .55; }
 </style>
 </head>
 <body>
   <h1>Safety Light</h1>
-  <p>A bright flashlight and high-visibility colour signal light for iPhone and Apple Watch.</p>
-  <ul>
-    <li><a href="support.html">Support</a></li>
-    <li><a href="privacy.html">Privacy Policy</a></li>
-  </ul>
+  <p class="tagline">A bright flashlight and a high-visibility colour signal light for iPhone &amp; Apple Watch — so you can <strong>see the path</strong> and <strong>be seen</strong> in the dark.</p>
+  <p class="sub">One-time purchase. No subscription, no ads, no login, no data collected.</p>
+
+  <div class="shots">
+    <img src="shots/shot1.png" alt="Safety Light showing a blinking red be-seen screen light" loading="lazy">
+    <img src="shots/shot2.png" alt="Safety Light using the screen colour light and rear LED flashlight together" loading="lazy">
+    <img src="shots/shot3.png" alt="Safety Light on Apple Watch as a glowing green signal light" loading="lazy">
+  </div>
+
+  <div class="links">
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+
+  <footer>© 2026 Michal Kralovic · Contact: <a href="mailto:michal.kralovic@gmail.com">michal.kralovic@gmail.com</a></footer>
 </body>
 </html>
